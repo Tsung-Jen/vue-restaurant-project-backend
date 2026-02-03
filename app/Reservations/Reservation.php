@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace App\Reservations;
 
 use Illuminate\Database\Eloquent\Model;
 
