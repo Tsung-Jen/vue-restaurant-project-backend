@@ -18,7 +18,7 @@ return new class extends Migration
             $table->date('date');
             $table->string('time');
             $table->integer('guests');
-            $table->text('note')->nullable();
+            $table->text('')->nullable();
             $table->timestamps();
         });
     }
