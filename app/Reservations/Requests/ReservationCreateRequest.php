@@ -20,7 +20,7 @@ class ReservationCreateRequest extends FormRequest
       'date' => 'required|date|after_or_equal:today|before_or_equal:' . now()->addWeeks(2)->toDateString(),
       'time' => 'required|date_format:H:i',
       'guests' => 'required|integer|min:1|max:30',
-      'special_requests' => 'nullable|string|max:65535',
+      'note' => 'nullable|string|max:65535',
     ];
   }
 
@@ -33,7 +33,7 @@ class ReservationCreateRequest extends FormRequest
       'date' => trans('reservations.attributes.date'),
       'time' => trans('reservations.attributes.time'),
       'guests' => trans('reservations.attributes.guests'),
-      'special_requests' => trans('reservations.attributes.special_requests'),
+      'note' => trans('reservations.attributes.note'),
     ];
   }
 }

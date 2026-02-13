@@ -14,7 +14,7 @@ use Illuminate\Support\Carbon;
  * @property Carbon $date
  * @property string $time
  * @property int $guests
- * @property string|null $special_requests
+ * @property string|null $note
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  */
@@ -26,10 +26,10 @@ class Reservation extends Model
         'date',
         'time',
         'guests',
-        'special_requests',
+        'note',
     ];
 
-    protected $casts = [
-        'date' => Carbon::class,
-    ];
+    // protected $casts = [
+    //     'date' => Carbon::class,
+    // ];
 }
