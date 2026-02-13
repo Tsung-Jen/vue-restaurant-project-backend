@@ -18,7 +18,7 @@ return new class extends Migration
             $table->date('date');
             $table->string('time');
             $table->integer('guests');
-            $table->text('')->nullable();
+            $table->text('note')->nullable();
             $table->timestamps();
         });
     }
@@ -26,8 +26,8 @@ return new class extends Migration
     /**
      * Reverse the migrations.
      */
-    public function down(): void
-    {
-        Schema::dropIfExists('reservations');
-    }
+    // public function down(): void
+    // {
+    //     Schema::dropIfExists('reservations');
+    // }
 };
